@@ -14,7 +14,7 @@ function Whatsapp({occasion}) {
       };
 
   return (
-    <div onClick={handleClick} className='fixed group bottom-10 right-4 md:right-10 cursor-pointer animate-bounce shadow-2xl'>
+    <div onClick={handleClick} className='fixed group bottom-4 md:bottom-10 right-4 md:right-10 cursor-pointer animate-bounce shadow-2xl'>
 
 		<div className='relative hidden group-hover:flex'>
 			<div className='absolute w-[150px] bg-[#e6e3e3] px-2 py-4 -top-12 right-8 rounded-lg divShape'>

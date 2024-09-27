@@ -27,7 +27,7 @@ function Footer() {
 
       <div className='w-full flex flex-col lg:flex-row gap-8 justify-between lg:p-4'>
 
-        <div className='w-full lg:w-1/4 flex flex-col items-center gap-4 '>
+        <div className='w-full lg:w-1/4 flex flex-col items-center gap-4 my-4'>
 
           <div className='w-1/2'>
             <Logo />
@@ -35,18 +35,24 @@ function Footer() {
           
           <div className='lg:ml-10 mx-auto flex  justify-between  items-center gap-2 relative w-full lg:w-3/4'>
             <div className='w-full flex items-center justify-evenly lg:justify-evenly'>
+              <NavLink to={'https://www.zomato.com/kolkata/bonntonn-gourmet-gift-studio-alipore'}>
                 <div className='flex items-center'>
                   <img className='w-[44px]' src='./zomato.png'/>
                 </div>
+              </NavLink>
+              <NavLink to={'https://www.swiggy.com/city/kolkata/bonn-tonn-gourmet-opposite-papillon-flower-shop-alipore-rest705986'}>
                 <div className=''>
                   <img className=' w-[38px] rounded-xl' src='./swiggy.png'/>
                 </div>
+              </NavLink>
           </div>
            
             {/* <div className='w-full'> */}
-            <Button className={`w-[250px] px-4 py-2 transition duration-500 mx-auto font-semibold rounded-[24px] border border-[#1F0B00] text-[#1F0B00] text-sm hover:bg-[#454545] hover:text-white`}>
-                        Order Directly
-                    </Button>
+            <NavLink to={'https://bonntonn.petpooja.com/'}>
+              <Button className={`w-[250px] px-5 py-1 transition duration-500 mx-auto font-semibold rounded-xl border border-[#1F0B00] text-[#1F0B00] text-lg hover:bg-[#454545] hover:text-white`}>
+                          Order Directly
+                      </Button>
+            </NavLink>
             {/* </div> */}
           </div>
         </div>
