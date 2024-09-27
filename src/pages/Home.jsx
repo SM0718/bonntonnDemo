@@ -5,12 +5,13 @@ import { boxes } from '../utils/boxes'
 import Contact from '../components/Contact'
 import TypeAnimations from '../components/TypeAnimations'
 import { NavLink } from 'react-router-dom'
+import Whatsapp from '../components/Whatsapp'
 
 function Home() {
 
   
   return (
-    <div className='flex flex-col items-center justify-center'>
+    <div className='flex flex-col items-center justify-center relative'>
 
         <HeadLabel bannerPic={'./mainBanner.webp'}>
         <div className="w-3/4 mx-auto m-16 flex flex-col gap-4 items-center z-40"
@@ -91,6 +92,8 @@ function Home() {
               <h1 className='text-3xl md:text-5xl headings text-center'>Write To Us Below</h1>
               <Contact />
             </div>
+
+            <Whatsapp occasion={'Bulk Ordering'}/>
     </div>
   )
 }
