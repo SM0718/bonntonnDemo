@@ -42,7 +42,7 @@ function Home() {
         </div>
         
 
-        <HeadLabel bannerPic={'./diwaliActual.webp'}>
+        <HeadLabel bannerPic={'./diwali.webp'}>
         <div className="w-3/4 mx-auto m-16 flex flex-col items-center gap-4 z-40"
            >
             <h2 className='headings text-center text-lg md:text-xl lg:text-5xl text-white px-1 md:px-4'>DIWALI EDIT</h2>
@@ -60,7 +60,7 @@ function Home() {
           </div>
           </HeadLabel>
 
-        <HeadLabel bannerPic={'./diwali.webp'}>
+        <HeadLabel bannerPic={'./diwaliActual.webp'}>
         <div className="w-3/4 mx-auto  m-16 flex flex-col justify-end items-center gap-4 z-40">
             <h2 className='headings text-center text-lg md:text-xl lg:text-5xl text-white px-1 md:px-4'>BIRTH ANNOUNCEMENTS</h2>
             <p className='hidden text-center md:flex para text-sm md:text-xl text-white px-4'>
