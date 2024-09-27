@@ -5,7 +5,7 @@ import { boxes } from '../utils/boxes'
 import Contact from '../components/Contact'
 import TypeAnimations from '../components/TypeAnimations'
 import { NavLink } from 'react-router-dom'
-import Whatsapp from '../components/Whatsapp'
+import Whatsapp from '../svg/Whatsapp'
 
 function Home() {
 
@@ -18,15 +18,12 @@ function Home() {
            >
             <h2 className='headings text-center text-lg md:text-xl lg:text-5xl font-medium text-white px-1 md:px-4 headings'><TypeAnimations /></h2>
             <p className='hidden text-center md:flex para text-sm md:text-xl text-white px-4 para'>
-            Luxury gift boxes, thoughtfully curated to celebrate moments, create memories, and deepen connections.</p>
-            <p className='md:hidden flex text-white text-center para text-base px-1 para'>Luxury gift boxes, thoughtfully curated to celebrate moments, create memories, and deepen connections.</p>
-            {/* {
-                toggleModal && <Button onClick={toggleModal} className={'bg-black hover:bg-[#393939] cursor-pointer transition duration-400 text-white mx-1 md:mx-4 px-4 py-2 rounded-lg text-xs md:text-lg'}>View Catalouge</Button>
-            } */}
+            Luxury gift boxes that are thoughtfully curated to celebrate moments, create memories, and deepen connections.</p>
+            <p className='md:hidden flex text-white text-center para text-base px-1 para'>Luxury gift boxes that are thoughtfully curated to celebrate moments, create memories, and deepen connections.</p>
           </div>
         </HeadLabel>
         
-        <div className='w-full flex flex-col gap-4 descText my-20 '>
+        <div className='w-full flex flex-col gap-4 descText my-20 px-2'>
           <h1 className='text-2xl md:text-5xl text-center'>Make It Your Own</h1>
           <div className='flex justify-evenly gap-8 flex-wrap my-8'>
             {
@@ -51,10 +48,10 @@ function Home() {
             <p className='md:hidden flex text-white text-center para text-base px-1'>Exquisite Diwali gift boxes to celebrate success and impress corporate partners.</p>
             <div className='flex flex-col md:flex-row gap-4 my-4'>
                <NavLink to={'https://publuu.com/flip-book/668043/1488146'}>
-                <Button className={'bg-white hover:bg-black transition duration-500 w-[200px] cursor-pointer text-black hover:text-white font-semibold mx-1 md:mx-4 px-6 py-4 rounded-xl text-xs md:text-lg para'}>Gifting Pre-Sets</Button>
+                <Button className={'bg-white hover:bg-black transition duration-500 w-[200px] cursor-pointer text-black hover:text-white font-semibold mx-1 md:mx-4 px-6 py-4 rounded-xl text-lg para'}>Gifting Pre-Sets</Button>
                 </NavLink>
-               <Button className={'bg-white hover:bg-black transition duration-500 w-[200px] cursor-pointer text-black hover:text-white font-semibold mx-1 md:mx-4 px-6 py-4 rounded-xl text-xs md:text-lg para'}>Personal Gifting</Button>
-               <Button className={'bg-white hover:bg-black transition duration-500 w-[200px] cursor-pointer text-black hover:text-white font-semibold mx-1 md:mx-4 px-6 py-4 rounded-xl text-xs md:text-lg para'}>Corporate Gifting</Button>
+               <Button className={'bg-white hover:bg-black transition duration-500 w-[200px] cursor-pointer text-black hover:text-white font-semibold mx-1 md:mx-4 px-6 py-4 rounded-xl text-lg para'}>Personal Gifting</Button>
+               <Button className={'bg-white hover:bg-black transition duration-500 w-[200px] cursor-pointer text-black hover:text-white font-semibold mx-1 md:mx-4 px-6 py-4 rounded-xl text-lg para'}>Corporate Gifting</Button>
             </div>
             
           </div>
@@ -65,9 +62,9 @@ function Home() {
             <h2 className='headings text-center text-lg md:text-xl lg:text-5xl text-white px-1 md:px-4'>BIRTH ANNOUNCEMENTS</h2>
             <p className='hidden text-center md:flex para text-sm md:text-xl text-white px-4'>
             Elegant birth announcements, exquisitely designed to celebrate new beginnings, share your joy, and create cherished memories with family and friends.</p>
-            <p className='md:hidden flex text-white text-center para text-base px-1'>Elegant birth announcements, designed to celebrate new beginnings and share your joy with loved ones.</p>
+            <p className='md:hidden flex text-white text-center para text-base px-1'>Elegant birth announcements are designed to celebrate new beginnings and share your joy with loved ones.</p>
             <div className='my-4'>
-               <Button className={'bg-white hover:bg-black transition duration-500 cursor-pointer text-black hover:text-white font-semibold mx-1 md:mx-4 px-6 py-4 rounded-xl text-xs md:text-lg para'}>View Cataloge</Button>
+               <Button className={'bg-white hover:bg-black transition duration-500 cursor-pointer text-black hover:text-white font-semibold mx-1 md:mx-4 px-6 py-4 rounded-xl text-lg para'}>View Cataloge</Button>
             </div>
             
           </div>
@@ -82,7 +79,7 @@ function Home() {
             <p className='md:hidden text-center flex para text-sm md:text-xl text-white px-4'>
             Opulent wedding announcements, crafted to showcase your love and leave an unforgettable impression.</p>
             <div className='my-4'>
-               <Button className={'bg-white hover:bg-black transition duration-500 cursor-pointer text-black hover:text-white font-semibold mx-1 md:mx-4 px-4 py-4 rounded-xl text-xs md:text-lg para'}>View Cataloge</Button>
+               <Button className={'bg-white hover:bg-black transition duration-500 cursor-pointer text-black hover:text-white font-semibold mx-1 md:mx-4 px-4 py-4 rounded-xl text-lg para'}>View Cataloge</Button>
             </div>
             
           </div>
