@@ -5,6 +5,8 @@ import Linkdin from '../svg/Linkdin'
 import { NavLink } from 'react-router-dom'
 import Logo from './Logo'
 import Button from './Button'
+import Zomato from '../svg/Zomato'
+import Swiggy from '../svg/Swiggy'
 
 function Footer() {
 
@@ -13,52 +15,46 @@ function Footer() {
   return (
     <div className="w-full px-8 py-8 border-t-4">
 
-      {/* <div className='w-full flex flex-col sm:flex-row mx-4 justify-center gap-[50px] pt-16 font-bold para'>
-        <p className='text-center'>Privacy Policy</p>
-
-        <p className='text-center'>Terms & Conditions</p>
-
-        <p className='text-center'>Contact Us</p>
-      </div>
-
-      <div className='py-16'>
-        <p className='w-full px-4 para font-medium mx-auto text-center'>&copy; {currentYear} Bonntonn Gourmet Gifting Studio. All rights reserved.</p>
-      </div> */}
-
       <div className='w-full flex flex-col lg:flex-row gap-8 justify-between lg:p-4'>
 
-        <div className='w-full lg:w-1/4 flex flex-col items-center gap-4 my-4'>
+        <div className='w-full lg:w-1/4 flex flex-col items-center'>
 
           <div className='w-1/2'>
             <Logo />
           </div>
+
+          {/* https://www.zomato.com/kolkata/bonntonn-gourmet-gift-studio-alipore */}
+          {/* https://www.swiggy.com/city/kolkata/bonn-tonn-gourmet-opposite-papillon-flower-shop-alipore-rest705986 */}
           
-          <div className='lg:ml-10 mx-auto flex  justify-between  items-center gap-2 relative w-full lg:w-3/4'>
-            <div className='w-full flex items-center justify-evenly lg:justify-evenly'>
-              <NavLink to={'https://www.zomato.com/kolkata/bonntonn-gourmet-gift-studio-alipore'}>
-                <div className='flex items-center'>
-                  <img className='w-[44px]' src='./zomato.png'/>
-                </div>
-              </NavLink>
-              <NavLink to={'https://www.swiggy.com/city/kolkata/bonn-tonn-gourmet-opposite-papillon-flower-shop-alipore-rest705986'}>
-                <div className=''>
-                  <img className=' w-[38px] rounded-xl' src='./swiggy.png'/>
-                </div>
-              </NavLink>
-          </div>
-           
-            {/* <div className='w-full'> */}
-            <NavLink to={'https://bonntonn.petpooja.com/'}>
-              <Button className={`w-[250px] px-5 py-1 transition duration-500 mx-auto font-semibold rounded-xl border border-[#1F0B00] text-[#1F0B00] text-lg hover:bg-[#454545] hover:text-white`}>
-                          Order Directly
-                      </Button>
+          <div className='md:ml-20 flex flex-col gap-20 items-center w-full px-6'>
+            <div className='flex justify-between gap-12'>
+
+            <NavLink to={'https://www.zomato.com/kolkata/bonntonn-gourmet-gift-studio-alipore'}>
+              <div className='h-2'>
+                <Zomato />
+              </div>
             </NavLink>
-            {/* </div> */}
+
+            <NavLink to={'https://www.swiggy.com/city/kolkata/bonn-tonn-gourmet-opposite-papillon-flower-shop-alipore-rest705986'}>
+              <div className='h-2'>
+                <Swiggy />
+              </div>
+            </NavLink>
+              
+
+            </div>
+            
+                      <NavLink to={'https://bonntonn.petpooja.com/'} className={'w-full'}>
+                        <Button className={`w-full px-5 py-1 transition duration-500 mx-auto font-semibold rounded-xl border border-[#1F0B00] bg-black text-white text-lg hover:bg-white hover:text-black`}>
+                            Order Directly
+                        </Button>
+                      </NavLink>
+
           </div>
         </div>
 
         <div className='flex flex-col gap-4'>
-          <h1 className='text-center font-bold headings'>Full Address Of The Company</h1>
+          <h1 className='text-center font-bold headings text-xl'>Full Address Of The Company</h1>
           <p className='w-full lg:w-[200px] text-center para'>Flat 2B, Alipore Residency, 3, Burdwan Rd, Near State Bank, Alipore, Kolkata, West Bengal 700027</p>
         </div>
 

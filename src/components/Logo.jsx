@@ -2,7 +2,7 @@ import React from 'react'
 
 function Logo() {
   return (
-    <div>Logo</div>
+    <img className='w-44' src={"./image.png"}/>
   )
 }
 
