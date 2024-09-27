@@ -11,10 +11,11 @@ function Home() {
   
   return (
     <div className='flex flex-col items-center justify-center'>
-        <HeadLabel bannerPic={'./banner.webp'}>
+
+        <HeadLabel bannerPic={'./mainBanner.webp'}>
         <div className="w-3/4 mx-auto m-16 flex flex-col gap-4 items-center z-40"
            >
-            <h2 className='headings text-center text-lg md:text-xl lg:text-5xl text-white px-1 md:px-4 headings'><TypeAnimations /></h2>
+            <h2 className='headings text-center text-lg md:text-xl lg:text-5xl font-medium text-white px-1 md:px-4 headings'><TypeAnimations /></h2>
             <p className='hidden text-center md:flex para text-sm md:text-xl text-white px-4 para'>
             Luxury gift boxes, thoughtfully curated to celebrate moments, create memories, and deepen connections.</p>
             <p className='md:hidden flex text-white text-center para text-base px-1 para'>Luxury gift boxes, thoughtfully curated to celebrate moments, create memories, and deepen connections.</p>
@@ -31,8 +32,8 @@ function Home() {
               boxes.map(item => <div key={item.desc} className='flex flex-col items-center gap-4'>
                 <img className='rounded-full size-[70px] md:size-[200px]' src={item.pic}/>
                 <div className='flex flex-col items-center gap-2'>
-                  <p className='text-sm md:text-xl desc font-semibold'>{item.desc}</p>
-                  <p className='text-xs md:text-lg para'>{item.moq}</p>
+                  <p className='text-sm md:text-xl headings font-semibold'>{item.desc}</p>
+                  <p className='text-xs md:text-lg para text-slate-500'>{item.moq}</p>
                 </div>
               </div>)
             }
@@ -40,7 +41,7 @@ function Home() {
         </div>
         
 
-        <HeadLabel bannerPic={'./banner2.webp'}>
+        <HeadLabel bannerPic={'./diwaliActual.webp'}>
         <div className="w-3/4 mx-auto m-16 flex flex-col items-center gap-4 z-40"
            >
             <h2 className='headings text-center text-lg md:text-xl lg:text-5xl text-white px-1 md:px-4'>DIWALI EDIT</h2>
@@ -58,7 +59,7 @@ function Home() {
           </div>
           </HeadLabel>
 
-        <HeadLabel bannerPic={'./banner.webp'}>
+        <HeadLabel bannerPic={'./birth.webp'}>
         <div className="w-3/4 mx-auto  m-16 flex flex-col justify-end items-center gap-4 z-40">
             <h2 className='headings text-center text-lg md:text-xl lg:text-5xl text-white px-1 md:px-4'>BIRTH ANNOUNCEMENTS</h2>
             <p className='hidden text-center md:flex para text-sm md:text-xl text-white px-4'>
@@ -71,7 +72,7 @@ function Home() {
           </div>
           </HeadLabel>
 
-        <HeadLabel bannerPic={'./banner2.webp'}>
+        <HeadLabel bannerPic={'./wedding.webp'}>
         <div className="w-3/4 mx-auto  m-16 flex flex-col items-center gap-4 z-40"
            >
             <h2 className='headings text-center text-lg md:text-xl lg:text-5xl text-white px-1 md:px-4'>WEDDINGS</h2>
@@ -80,7 +81,7 @@ function Home() {
             <p className='md:hidden text-center flex para text-sm md:text-xl text-white px-4'>
             Opulent wedding announcements, crafted to showcase your love and leave an unforgettable impression.</p>
             <div className='my-4'>
-               <Button className={'bg-white hover:bg-black transition duration-500 cursor-pointer text-black hover:text-white font-semibold mx-1 md:mx-4 px-6 py-4 rounded-xl text-xs md:text-lg'}>View Cataloge</Button>
+               <Button className={'bg-white hover:bg-black transition duration-500 cursor-pointer text-black hover:text-white font-semibold mx-1 md:mx-4 px-4 py-4 rounded-xl text-xs md:text-lg'}>View Cataloge</Button>
             </div>
             
           </div>
