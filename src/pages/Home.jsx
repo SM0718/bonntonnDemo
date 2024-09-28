@@ -71,7 +71,7 @@ function Home() {
           </HeadLabel>
 
           <div className='w-full flex flex-col gap-4 b my-20 px-2'>
-          <h1 className='text-2xl md:text-5xl text-center'>Make It Your Own</h1>
+          <h1 className='text-2xl md:text-5xl text-center font-semibold b'>Make It Your Own</h1>
           <div className='flex justify-evenly gap-8 flex-wrap my-8'>
             {
               boxes.map(item => <div key={item.desc} className='flex flex-col items-center gap-4 b'>
@@ -85,8 +85,8 @@ function Home() {
           </div>
         </div>
 
-            <div className='w-full flex flex-col items-center gap-10 my-20 mx-auto'>
-              <h1 className='text-3xl md:text-5xl text-center b'>Connect With Us</h1>
+            <div className='w-full flex flex-col items-center gap-10 md:my-20 mx-auto'>
+              <h1 className='text-2xl md:text-5xl text-center font-semibold b'>Connect With Us</h1>
               <Contact />
             </div>
 

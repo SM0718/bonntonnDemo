@@ -182,7 +182,7 @@ function Contact() {
                 <label className='b'>Contact Number*</label>
                 <Input
                     className="border-2 border-[#c7c7c7] text-[#9ca3af] p-2 rounded-lg b"
-                    placeholder="Whatsapp Number"
+                    placeholder="Contact Number"
                     type="number"
                     {...register("whatsapp_number", {
                         required: true,
@@ -255,7 +255,7 @@ function Contact() {
                     </div>
 
                 <div className='w-full lg:w-1/2 flex flex-col gap-1'>
-                <label className='b'>Where Did you Hear About Us From?</label>
+                <label className='b'>Where Did You Hear About Us From?</label>
                 <Input
                 className="border-2 border-[#c7c7c7] text-[#9ca3af] p-2 rounded-lg b"
                 placeholder="Enter Platform"
