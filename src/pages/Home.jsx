@@ -28,10 +28,10 @@ function Home() {
           <div className='flex justify-evenly gap-8 flex-wrap my-8'>
             {
               boxes.map(item => <div key={item.desc} className='flex flex-col items-center gap-4'>
-                <img className='rounded-full size-[70px] md:size-[200px]' src={item.pic}/>
+                <img className='rounded-full size-[80px] md:size-[200px]' src={item.pic}/>
                 <div className='flex flex-col items-center gap-2'>
-                  <p className='text-sm md:text-xl headings font-semibold'>{item.desc}</p>
-                  <p className='text-xs md:text-lg para text-slate-500'>{item.moq}</p>
+                  <p className='text-lg md:text-xl headings font-semibold'>{item.desc}</p>
+                  <p className='text-sm md:text-lg para text-slate-500'>{item.moq}</p>
                 </div>
               </div>)
             }

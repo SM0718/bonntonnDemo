@@ -204,17 +204,17 @@ function Contact() {
                         onClick={() => setIsOpen(!isOpen)}
                         className="w-full p-2 border-2 border-[#c7c7c7] rounded-lg text-left"
                     >
-                        {selectedValue}
+                        { selectedValue }
                     </Button>
                     {isOpen && (
-                        <div className="absolute w-full mt-1 bg-white border border-gray-300 rounded-lg shadow-lg">
+                        <div className="absolute w-full mt-1 bg-white border border-gray-300 rounded-lg shadow-lg z-50">
                             {options.map((option) => (
                                 <div
                                     key={option.value}
                                     onClick={() => handleSelect(option.label)}
                                     className="p-2 hover:bg-gray-100 cursor-pointer"
                                 >
-                                    {option.label}
+                                    { option.label }
                                 </div>
                             ))}
                         </div>
