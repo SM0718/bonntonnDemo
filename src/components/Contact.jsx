@@ -179,7 +179,7 @@ function Contact() {
                    
 
                     <div className='w-full lg:w-1/2 flex flex-col gap-1'>
-                <label className='b'>Whatsapp Number*</label>
+                <label className='b'>Contact Number*</label>
                 <Input
                     className="border-2 border-[#c7c7c7] p-2 rounded-lg b"
                     placeholder="Whatsapp Number"

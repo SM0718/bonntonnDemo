@@ -17,9 +17,9 @@ function Home() {
         <div className="w-3/4 mx-auto m-16 flex flex-col gap-4 items-center z-40"
            >
             <h2 className='headings text-center text-2xl lg:text-5xl font-medium text-white px-1 md:px-4 b'><TypeAnimations /></h2>
-            <p className='hidden text-center md:flex para text-sm md:text-xl text-white px-4 b'>
+            <p className='hidden text-center md:flex text-base md:text-xl text-white px-4 b'>
             Luxury gift boxes that are thoughtfully curated to celebrate moments, create memories, and deepen connections.</p>
-            <p className='md:hidden flex text-white text-center para text-base px-1 b'>Luxury gift boxes that are thoughtfully curated to celebrate moments, create memories, and deepen connections.</p>
+            <p className='md:hidden flex text-white text-center text-base px-1 b'>Luxury gift boxes that are thoughtfully curated to celebrate moments, create memories, and deepen connections.</p>
           </div>
         </HeadLabel>
         
@@ -28,7 +28,7 @@ function Home() {
         <div className="w-3/4 mx-auto m-16 flex flex-col i lbtems-center gap-4 z-40"
            >
             <h2 className='headings text-center text-2xl lg:text-5xl text-white px-1 md:px-4 b'>DIWALI EDIT</h2>
-            <p className='hidden text-center md:flex para text-sm md:text-xl text-white px-4 b'>
+            <p className='hidden text-center md:flex text-base md:text-xl text-white px-4 b'>
             Exquisite Diwali gift boxes, curated to celebrate success, foster connections, and leave a lasting impression on your corporate partners.</p>
             <p className='md:hidden flex text-white text-center text-base px-1 b'>Exquisite Diwali gift boxes to celebrate success and impress corporate partners.</p>
             <div className='flex flex-col justify-center items-center md:flex-row gap-4 my-4'>
@@ -47,7 +47,7 @@ function Home() {
             <h2 className='headings text-center text-2xl lg:text-5xl text-white px-1 md:px-4 b'>BIRTH ANNOUNCEMENTS</h2>
             <p className='hidden text-center md:flex text-sm md:text-xl text-white px-4 b'>
             Elegant birth announcements, exquisitely designed to celebrate new beginnings, share your joy, and create cherished memories with family and friends.</p>
-            <p className='md:hidden flex text-white text-center para text-base px-1 b'>Elegant birth announcements are designed to celebrate new beginnings and share your joy with loved ones.</p>
+            <p className='md:hidden flex text-white text-center text-base px-1 b'>Elegant birth announcements are designed to celebrate new beginnings and share your joy with loved ones.</p>
             <div className='my-4'>
                <Button className={'bg-white hover:bg-black transition duration-500 cursor-pointer text-black hover:text-white font-semibold mx-1 md:mx-4 px-6 py-4 rounded-xl text-lg b'}>View Catalogue</Button>
             </div>
@@ -64,7 +64,7 @@ function Home() {
             <p className='md:hidden text-center flex para text-base md:text-xl text-white px-4'>
             Opulent wedding announcements, crafted to showcase your love and leave an unforgettable impression.</p>
             <div className='my-4'>
-               <Button className={'bg-white hover:bg-black transition duration-500 cursor-pointer text-black hover:text-white font-semibold mx-1 md:mx-4 px-4 py-4 rounded-xl text-lg b'}>View Catalogue</Button>
+               <Button className={'bg-white hover:bg-black transition duration-500 cursor-pointer text-black hover:text-white font-semibold mx-1 md:mx-4 px-6 py-4 rounded-xl text-lg b'}>View Catalogue</Button>
             </div>
             
           </div>
