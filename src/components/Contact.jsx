@@ -101,7 +101,7 @@ function Contact() {
                 <div className='w-full lg:w-1/2 flex flex-col gap-1'>
                 <label className='b'>First Name*</label>
                 <Input
-                    className="border-2 border-[#c7c7c7] p-2 rounded-lg b"
+                    className="border-2 border-[#c7c7c7] text-[#9ca3af] p-2 rounded-lg b"
                     placeholder="First Name"
                     type="text"
                     labelStyle=""
@@ -114,7 +114,7 @@ function Contact() {
                 <div className='w-full lg:w-1/2 flex flex-col gap-1'>
                     <label className='b'>Last Name*</label>
                 <Input
-                    className="border-2 border-[#c7c7c7] p-2  rounded-lg b"
+                    className="border-2 border-[#c7c7c7] p-2 text-[#9ca3af] rounded-lg b"
                     placeholder="Last Name"
                     type="text"
                     labelStyle=""
@@ -136,7 +136,7 @@ function Contact() {
                     <Button
                         type={'button'}
                         onClick={() => setIsQuantityOpen(!isQuantityOpen)}
-                        className="w-full p-2 border-2 border-[#c7c7c7] rounded-lg text-left b"
+                        className="w-full p-2 border-2 border-[#c7c7c7] text-[#9ca3af] rounded-lg text-left b"
                     >
                         {selectedQuantity}
                     </Button>
@@ -159,7 +159,7 @@ function Contact() {
                 <div className='w-full lg:w-1/2 flex flex-col gap-1'>
                 <label className='b'>Email*</label>
                 <Input
-                className="border-2 border-[#c7c7c7] p-2 rounded-lg b"
+                className="border-2 border-[#c7c7c7] text-[#9ca3af] p-2 rounded-lg b"
                 placeholder="Enter your email"
                 type="email"
                 {...register("user_email", {
@@ -181,7 +181,7 @@ function Contact() {
                     <div className='w-full lg:w-1/2 flex flex-col gap-1'>
                 <label className='b'>Contact Number*</label>
                 <Input
-                    className="border-2 border-[#c7c7c7] p-2 rounded-lg b"
+                    className="border-2 border-[#c7c7c7] text-[#9ca3af] p-2 rounded-lg b"
                     placeholder="Whatsapp Number"
                     type="number"
                     {...register("whatsapp_number", {
@@ -202,7 +202,7 @@ function Contact() {
                     <Button
                     type={'button'}
                         onClick={() => setIsOpen(!isOpen)}
-                        className="w-full p-2 border-2 border-[#c7c7c7] rounded-lg text-left b"
+                        className="w-full p-2 border-2 border-[#c7c7c7] text-[#9ca3af] rounded-lg text-left b"
                     >
                         { selectedValue }
                     </Button>
@@ -234,7 +234,7 @@ function Contact() {
                     <Button
                         type={'button'}
                         onClick={() => setIsBudgetOpen(!isBudgetOpen)}
-                        className="w-full p-2 border-2 border-[#c7c7c7] rounded-lg text-left b"
+                        className="w-full p-2 border-2 border-[#c7c7c7] text-[#9ca3af] rounded-lg text-left b"
                     >
                         {selectedBudget}
                     </Button>
@@ -257,7 +257,7 @@ function Contact() {
                 <div className='w-full lg:w-1/2 flex flex-col gap-1'>
                 <label className='b'>Where Did you Hear About Us From?</label>
                 <Input
-                className="border-2 border-[#c7c7c7] p-2 rounded-lg b"
+                className="border-2 border-[#c7c7c7] text-[#9ca3af] p-2 rounded-lg b"
                 placeholder="Enter Platform"
                 type="text"
                 {...register("user_knowledge")}

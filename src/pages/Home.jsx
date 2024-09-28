@@ -58,10 +58,10 @@ function Home() {
         <HeadLabel bannerPic={'./wedding.webp'}>
         <div className="w-3/4 mx-auto  m-16 flex flex-col items-center gap-4 z-40"
            >
-            <h2 className='headings text-center text-2xl lg:text-5xl text-white px-1 md:px-4'>WEDDINGS</h2>
-            <p className='hidden text-center md:flex para text-sm md:text-xl text-white px-4'>
+            <h2 className='headings text-center text-2xl lg:text-5xl text-white px-1 md:px-4 b'>WEDDINGS</h2>
+            <p className='hidden text-center md:flex text-sm md:text-xl text-white px-4 b'>
             Opulent wedding announcements, elegantly crafted to showcase your love and leave an unforgettable impression on your guests.</p>
-            <p className='md:hidden text-center flex para text-base md:text-xl text-white px-4'>
+            <p className='md:hidden text-center flex text-base md:text-xl text-white px-4 b'>
             Opulent wedding announcements, crafted to showcase your love and leave an unforgettable impression.</p>
             <div className='my-4'>
                <Button className={'bg-white hover:bg-black transition duration-500 cursor-pointer text-black hover:text-white font-semibold mx-1 md:mx-4 px-6 py-4 rounded-xl text-lg b'}>View Catalogue</Button>
@@ -86,7 +86,7 @@ function Home() {
         </div>
 
             <div className='w-full flex flex-col items-center gap-10 my-20 mx-auto'>
-              <h1 className='text-3xl md:text-5xl text-center b'>Write To Us Below</h1>
+              <h1 className='text-3xl md:text-5xl text-center b'>Connect With Us</h1>
               <Contact />
             </div>
 
