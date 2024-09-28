@@ -1,7 +1,7 @@
 export const boxes = [
     {
         pic: './wooden.jpg',
-        desc: 'Wodden',
+        desc: 'Wooden Box',
         moq: 'MOQ / 30 Pieces'
     },
     {
@@ -16,7 +16,7 @@ export const boxes = [
     },
     {
         pic: './crate.jpg',
-        desc: 'Crate',
+        desc: 'Platter ',
         moq: 'MOQ / 30 Pieces'
     },
     {

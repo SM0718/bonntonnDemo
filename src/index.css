@@ -80,6 +80,10 @@ line-height: normal;
 
 .lb {
   font-family: "Libre Baskerville", serif;
-  font-weight: 400;
+  font-style: normal;
+}
+
+.b {
+  font-family: "Baskervville", serif;
   font-style: normal;
 }
