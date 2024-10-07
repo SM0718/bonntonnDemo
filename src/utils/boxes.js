@@ -6,18 +6,18 @@ export const boxes = [
         moq: 'MOQ / 50 Pieces'
     },
     {
-        pic: './wooden.jpg',
+        pic: './woodenBox.webp',
         desc: 'Wooden Box',
         moq: 'MOQ / 30 Pieces'
     },
     {
-        pic: './box.jpg',
+        pic: './bmainBox.webp',
         desc: 'Box',
         moq: 'MOQ / 50 Pieces'
     },
     {
-        pic: './crate.jpg',
-        desc: 'Platter ',
+        pic: './platter.jpg',
+        desc: 'Platter',
         moq: 'MOQ / 30 Pieces'
     },
     {
