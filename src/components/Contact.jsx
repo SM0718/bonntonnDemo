@@ -28,6 +28,7 @@ function Contact() {
         { value: '1', label: 'Wedding' },
         { value: '2', label: 'Birth Announcements' },
         { value: '3', label: 'Corporate Gifting' },
+        { value: '4', label: 'Diwali Edit' },
     ];
 
     const budget = [
