@@ -268,7 +268,7 @@ function Contact() {
 
 
 
-                <Button disabled={loading? true : false}  type={'submit'} className={`w-full md:w-[450px] lg:w-3/4 h-12 mt-4 font-black transition duration-500 mx-auto rounded-[24px] border border-[#1F0B00] text-[#1F0B00] text-xl hover:bg-[#454545] hover:text-[#fff7f2] b ${loading? 'bg-[#777] cursor-wait' : 'bg-white cursor-pointer'} `}>
+                <Button disabled={loading? true : false}  type={'submit'} className={`w-full md:w-[450px] lg:w-3/4 h-12 mt-4 font-black transition duration-500 mx-auto rounded-[24px] border border-[#1F0B00] text-white hover:text-black hover:bg-white text-xl b ${loading? 'bg-[#777] cursor-wait' : 'bg-black cursor-pointer'} `}>
                         Submit
                     </Button>
                 {errors.phoneNumber && <p>{errors.phoneNumber.message}</p>}
