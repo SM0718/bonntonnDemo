@@ -35,6 +35,7 @@ function Contact() {
         { value: '1', label: '₹1200 - ₹1499' },
         { value: '2', label: '₹1500 - ₹2499' },
         { value: '3', label: '₹2500 - ₹3999' },
+        { value: '4', label: '4000+' },
     ];
 
       const sendEmail = async(form_data) => {
