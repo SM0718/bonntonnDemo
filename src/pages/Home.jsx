@@ -23,7 +23,7 @@ function Home() {
         </HeadLabel> */}
 
 
-            <div className='w-full h-screen bg-cover bg-top bg-no-repeat flex justify-start items-end relative bg-fixed
+            <div className='w-full h-screen bg-cover bg-center p-8 bg-no-repeat flex justify-start items-end relative bg-fixed
         ' style={{backgroundImage: `url('./mainBanner.webp')`}}>
             <div className="w-3/4 mx-auto m-16 flex flex-col gap-4 items-center relative before:content-[''] before:absolute before:w-full before:h-full before:bg-black/50 before:py-6 before:rounded-xl before:z-30 p-2">
                 <h2 className='headings text-center text-2xl lg:text-5xl font-medium text-white px-1 md:px-4 b z-40 py-4'><TypeAnimations /></h2>
@@ -156,7 +156,7 @@ function Home() {
           </HeadLabel> */}
 
 
-          <div className='w-full h-screen bg-cover bg-center bg-no-repeat flex justify-start items-end relative bg-fixed
+          <div className='w-full h-screen bg-cover bg-no-repeat flex justify-start items-end relative bg-fixed
         ' style={{backgroundImage: `url('./wedding.webp')`}}>
             <div className="w-3/4 mx-auto m-16 flex flex-col gap-4 items-center z-40 relative before:content-[''] before:absolute before:w-full before:h-full before:bg-black/50 before:py-6 before:rounded-xl p-2">
             <h2 className='headings text-center text-2xl lg:text-5xl text-white px-1 md:px-4 b py-4 z-50'>WEDDINGS</h2>
