@@ -165,7 +165,7 @@ function Home() {
             {choice === 1 && <img className='w-full h-full object-cover rounded-lg' src='./weddingPopup.webp' alt="Wedding Announcement Coming Soon"/>}
 
             {/* Close Button */}
-            <button onClick={handlePopupClose} className='absolute top-2 right-2 bg-white p-2 rounded-full shadow-lg'>
+            <button onClick={handlePopupClose} className='absolute top-2 right-2 bg-white py-1 px-2 font-bold text-sm rounded-full shadow-lg'>
               ✕
             </button>
           </div>

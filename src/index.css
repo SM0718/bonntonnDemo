@@ -87,3 +87,8 @@ line-height: normal;
   font-family: "Baskervville", serif;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'times'; /* Name of the font */
+  src: url('./timesNewRoman.ttf') format('truetype'); /* Path to the font */
+}

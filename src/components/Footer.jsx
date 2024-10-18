@@ -69,7 +69,7 @@ function Footer() {
                       <h1 className='font-bold text-center md:text-start text-xl headings b'>Contact Us</h1>
 
                       <div className='flex flex-col gap-2'>
-                        <p className='b text-center md:text-start text-base'>9874451300</p>
+                        <p className='times text-sm text-center md:text-start '>9874451300</p>
                         <p className='b text-base'>bonntonn.kolkata@gmail.com</p>
                       </div>
 

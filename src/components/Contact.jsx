@@ -99,11 +99,11 @@ function Contact() {
         className='h-auto w-full py-16 px-4 lg:px-8 rounded-lg flex flex-col justify-center gap-6 border-2 border-[#c7c7c7]'>
               
              
-              <div className='flex flex-col lg:flex-row gap-8'>
+              <div className='flex flex-col lg:flex-row gap-10'>
                 <div className='w-full lg:w-1/2 flex flex-col gap-1'>
                 <label className='b'>First Name*</label>
                 <Input
-                    className="border-2 border-[#c7c7c7] text-[#9ca3af] p-2 rounded-lg b"
+                    className="border-2 border-[#c7c7c7] text-[#9ca3af] p-2 rounded-lg times text-sm"
                     placeholder="First Name"
                     type="text"
                     labelStyle=""
@@ -116,7 +116,7 @@ function Contact() {
                 <div className='w-full lg:w-1/2 flex flex-col gap-1'>
                     <label className='b'>Last Name*</label>
                 <Input
-                    className="border-2 border-[#c7c7c7] p-2 text-[#9ca3af] rounded-lg b"
+                    className="border-2 border-[#c7c7c7] p-2 text-[#9ca3af] rounded-lg times text-sm"
                     placeholder="Last Name"
                     type="text"
                     labelStyle=""
@@ -130,7 +130,7 @@ function Contact() {
 
 
              
-                <div className='flex flex-col lg:flex-row gap-8'>
+                <div className='flex flex-col lg:flex-row gap-10'>
 
                 <div className='w-full lg:w-1/2 flex flex-col justify-center gap-1'>
                 <h3 className='b'>Quantity*</h3>
@@ -138,12 +138,12 @@ function Contact() {
                     <Button
                         type={'button'}
                         onClick={() => setIsQuantityOpen(!isQuantityOpen)}
-                        className="w-full p-2 border-2 border-[#c7c7c7] text-[#9ca3af] rounded-lg text-left b"
+                        className="w-full p-2 border-2 border-[#c7c7c7] text-[#9ca3af] rounded-lg text-left times text-sm"
                     >
                         {selectedQuantity}
                     </Button>
                     {isQuantityOpen && (
-                        <div className="absolute w-full mt-1 opacity-1 b bg-white border border-gray-300 rounded-lg shadow-lg">
+                        <div className="absolute w-full mt-1 opacity-1 times text-sm bg-white border border-gray-300 rounded-lg shadow-lg">
                             {quantityOptions.map((option) => (
                                 <div
                                     key={option.value}
@@ -161,7 +161,7 @@ function Contact() {
                 <div className='w-full lg:w-1/2 flex flex-col gap-1'>
                 <label className='b'>Email*</label>
                 <Input
-                className="border-2 border-[#c7c7c7] text-[#9ca3af] p-2 rounded-lg b"
+                className="border-2 border-[#c7c7c7] text-[#9ca3af] p-2 rounded-lg times text-sm"
                 placeholder="Enter your email"
                 type="email"
                 {...register("user_email", {
@@ -183,7 +183,7 @@ function Contact() {
                     <div className='w-full lg:w-1/2 flex flex-col gap-1'>
                 <label className='b'>Contact Number*</label>
                 <Input
-                    className="border-2 border-[#c7c7c7] text-[#9ca3af] p-2 rounded-lg b"
+                    className="border-2 border-[#c7c7c7] text-[#9ca3af] p-2 rounded-lg times text-sm"
                     placeholder="Contact Number"
                     type="number"
                     {...register("whatsapp_number", {
@@ -204,12 +204,12 @@ function Contact() {
                     <Button
                     type={'button'}
                         onClick={() => setIsOpen(!isOpen)}
-                        className="w-full p-2 border-2 border-[#c7c7c7] text-[#9ca3af] rounded-lg text-left b"
+                        className="w-full p-2 border-2 border-[#c7c7c7] text-[#9ca3af] rounded-lg text-left times text-sm"
                     >
                         { selectedValue }
                     </Button>
                     {isOpen && (
-                        <div className="absolute w-full mt-1 bg-white border b border-gray-300 rounded-lg shadow-lg z-50">
+                        <div className="absolute w-full mt-1 bg-white border times text-sm border-gray-300 rounded-lg shadow-lg z-50">
                             {options.map((option) => (
                                 <div
                                     key={option.value}
@@ -236,12 +236,12 @@ function Contact() {
                     <Button
                         type={'button'}
                         onClick={() => setIsBudgetOpen(!isBudgetOpen)}
-                        className="w-full p-2 border-2 border-[#c7c7c7] text-[#9ca3af] rounded-lg text-left b"
+                        className="w-full p-2 border-2 border-[#c7c7c7] text-[#9ca3af] rounded-lg text-left times text-sm"
                     >
                         {selectedBudget}
                     </Button>
                     {isBudgetOpen && (
-                        <div className="absolute w-full mt-1 b bg-white border border-gray-300 rounded-lg shadow-lg">
+                        <div className="absolute w-full mt-1 times text-sm bg-white border border-gray-300 rounded-lg shadow-lg">
                             {budget.map((option) => (
                                 <div
                                     key={option.value}
@@ -259,7 +259,7 @@ function Contact() {
                 <div className='w-full lg:w-1/2 flex flex-col gap-1'>
                 <label className='b'>Where Did You Hear About Us From?</label>
                 <Input
-                className="border-2 border-[#c7c7c7] text-[#9ca3af] p-2 rounded-lg b"
+                className="border-2 border-[#c7c7c7] text-[#9ca3af] p-2 rounded-lg times text-sm"
                 placeholder="Enter Platform"
                 type="text"
                 {...register("user_knowledge")}
