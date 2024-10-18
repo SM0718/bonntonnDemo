@@ -44,7 +44,7 @@ function Home() {
             Exquisite Diwali gift boxes, curated to celebrate success, foster connections, and leave a lasting impression on your corporate partners.</p>
             <p className='md:hidden flex text-white text-center text-base px-1 b z-50'>Exquisite Diwali gift boxes to celebrate success and impress corporate partners.</p>
             <div className='flex flex-col justify-center items-center md:flex-row gap-4 my-4 z-50'>
-            <NavLink to={'https://publuu.com/flip-book/688669/1532368'}>
+            <NavLink to={'https://publuu.com/flip-book/688669/1537334'}>
                <Button className={'bg-white hover:bg-black transition duration-500 w-[200px] cursor-pointer text-black hover:text-white font-semibold mx-1 md:mx-4 px-6 py-4 rounded-xl text-base b'}>Diwali Pre-Sets</Button>
             </NavLink>
 
@@ -137,7 +137,7 @@ function Home() {
             </div>
           </div> */}
 
-<div className='w-full h-screen bg-cover bg-no-repeat flex justify-start items-end relative bg-fixed'
+<div className='w-full h-screen bg-cover bg-center bg-no-repeat flex justify-start items-end relative bg-fixed'
         style={{backgroundImage: `url('./wedding.webp')`}}>
         <div className="w-3/4 mx-auto m-16 flex flex-col gap-4 items-center z-40 relative before:content-[''] before:absolute before:w-full before:h-full before:bg-black/50 before:py-6 before:rounded-xl p-2">
           <h2 className='headings text-center text-2xl lg:text-5xl text-white px-1 md:px-4 b py-4 z-50'>WEDDINGS</h2>
