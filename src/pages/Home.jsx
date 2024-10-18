@@ -180,7 +180,7 @@ function Home() {
                 <img className='rounded-full size-[80px] md:size-[200px]' src={item.pic}/>
                 <div className='flex flex-col items-center gap-2'>
                   <p className='text-lg md:text-xl headings font-semibold b'>{item.desc}</p>
-                  <p className='text-sm md:text-lg para text-slate-500 b'>{item.moq}</p>
+                  <p className='text-sm md:text-lg para text-slate-500 times'>{item.moq}</p>
                 </div>
               </div>)
             }
