@@ -44,7 +44,7 @@ function Home() {
             Exquisite Diwali gift boxes, curated to celebrate success, foster connections, and leave a lasting impression on your corporate partners.</p>
             <p className='md:hidden flex text-white text-center text-base px-1 b z-50'>Exquisite Diwali gift boxes to celebrate success and impress corporate partners.</p>
             <div className='flex flex-col justify-center items-center md:flex-row gap-4 my-4 z-50'>
-            <NavLink to={'https://publuu.com/flip-book/688669/1537334'}>
+            <NavLink to={'https://publuu.com/flip-book/688669/1537579'}>
                <Button className={'bg-white hover:bg-black transition duration-500 w-[200px] cursor-pointer text-black hover:text-white font-semibold mx-1 md:mx-4 px-6 py-4 rounded-xl text-base b'}>Diwali Pre-Sets</Button>
             </NavLink>
 
