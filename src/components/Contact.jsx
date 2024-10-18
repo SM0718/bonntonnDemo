@@ -79,7 +79,7 @@ function Contact() {
 
         setLoading(true)
         const emailData = {
-            from_name: data.first_name,
+            from_name: `${data.first_name} ${data.last_name}`,
             user_phone: data.whatsapp_number,
             order_quantity: selectedQuantity,
             occasion: selectedValue,
@@ -88,8 +88,8 @@ function Contact() {
             user_platform: data.user_knowledge && "Internet Search"
         };
 
-        console.log(emailData)
         await sendEmail(emailData)
+        reset()
     }
 
   return (
