@@ -1,7 +1,7 @@
 export const boxes = [
     
     {
-        pic: './sleeve.jpg',
+        pic: './sleeve.webp',
         desc: 'Sleeve',
         moq: 'MOQ / 50 Pieces'
     },
@@ -11,7 +11,7 @@ export const boxes = [
         moq: 'MOQ / 30 Pieces'
     },
     {
-        pic: './bmainBox.webp',
+        pic: './mainBox.webp',
         desc: 'Box',
         moq: 'MOQ / 50 Pieces'
     },
@@ -21,7 +21,7 @@ export const boxes = [
         moq: 'MOQ / 30 Pieces'
     },
     {
-        pic: './bag.jpg',
+        pic: './bag.webp',
         desc: 'Bag',
         moq: 'MOQ / 100 Pieces'
     },
