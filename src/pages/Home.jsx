@@ -39,7 +39,7 @@ function Home() {
               </div>
           </div>
 
-          <div className={`w-full h-screen bg-cover bg-top bg-no-repeat p-8 md:hidden flex justify-start items-end relative ${isAppleDevice()? "" : "bg-fixed"}`}
+          <div className={`w-full h-screen bg-cover bg-top bg-no-repeat p-8 md:hidden flex justify-start items-end relative ${isAppleDevice()? "bg-scroll" : "bg-fixed"}`}
             style={{backgroundImage: `url('./mobileBanner.webp')`}}>
             <div className="w-3/4 mx-auto m-16 flex flex-col gap-4 items-center relative before:content-[''] before:absolute before:w-full before:h-full before:bg-black/50 before:py-6 before:rounded-xl before:z-30 p-2">
                 <h2 className='headings text-center text-2xl lg:text-5xl font-medium text-white px-1 md:px-4 b z-40 py-4'><TypeAnimations /></h2>
