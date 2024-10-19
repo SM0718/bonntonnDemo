@@ -49,8 +49,7 @@ function Home() {
               </div>
           </div>
 
-          <div className='w-full h-screen bg-cover bg-center bg-no-repeat flex justify-start items-end relative bg-fixed
-        ' style={{backgroundImage: `url('./diwali.webp')`}}>
+          <div className={`w-full h-screen bg-cover bg-center bg-no-repeat flex justify-start items-end relative ${isAppleDevice()? "bg-scroll" : "bg-fixed"}`} style={{backgroundImage: `url('./diwali.webp')`}}>
             <div className="w-3/4 mx-auto m-16 flex flex-col gap-4 items-center z-40 relative before:content-[''] before:absolute before:w-full before:h-full before:bg-black/50 before:py-6 before:rounded-xl p-2">
                 <h2 className='headings text-center text-2xl lg:text-5xl font-medium text-white px-1 md:px-4 b z-50 py-4'>DIWALI EDIT</h2>
                 <p className='hidden text-center md:flex text-base md:text-xl z-50 text-white px-4 b'>
@@ -70,8 +69,7 @@ function Home() {
           </div>
 
 
-          <div className='w-full h-screen bg-cover bg-center bg-no-repeat flex justify-start items-end relative bg-fixed
-        ' style={{backgroundImage: `url('./giftingPreSets.webp')`}}>
+          <div className={`w-full h-screen bg-cover bg-center bg-no-repeat flex justify-start items-end relative ${isAppleDevice()? "bg-scroll" : "bg-fixed"}`} style={{backgroundImage: `url('./giftingPreSets.webp')`}}>
             <div className="w-3/4 mx-auto m-16 flex flex-col gap-4 items-center z-40 relative before:content-[''] before:absolute before:w-full before:h-full before:bg-black/50 before:py-6 before:rounded-xl p-2">
             <h2 className='hidden md:flex text-center text-2xl lg:text-5xl text-white px-1 md:px-4 b z-50 py-4'>GOURMET GIFTING STUDIO</h2>
             <div className='flex flex-col md:hidden text-center text-2xl lg:text-5xl text-white px-1 md:px-4 py-4 b'>
@@ -113,7 +111,7 @@ function Home() {
             </div>
           </div> */}
 
-    <div className='w-full h-screen bg-cover bg-center bg-no-repeat flex justify-start items-end relative bg-fixed'
+    <div className={`w-full h-screen bg-cover bg-center bg-no-repeat flex justify-start items-end relative ${isAppleDevice()? "bg-scroll" : "bg-fixed"}`}
         style={{backgroundImage: `url('./diwaliActual.webp')`}}>
         <div className="w-3/4 mx-auto m-16 flex flex-col gap-4 items-center z-40 relative before:content-[''] before:absolute before:w-full before:h-full before:bg-black/50 before:py-6 before:rounded-xl p-2">
           <h2 className='headings text-center text-2xl lg:text-5xl text-white px-1 md:px-4 b py-4 z-50'>BIRTH ANNOUNCEMENTS</h2>
@@ -150,7 +148,7 @@ function Home() {
             </div>
           </div> */}
 
-<div className='w-full h-screen bg-cover bg-center bg-no-repeat flex justify-start items-end relative bg-fixed'
+<div className={`w-full h-screen bg-cover bg-center bg-no-repeat flex justify-start items-end relative ${isAppleDevice()? "bg-scroll" : "bg-fixed"}`}
         style={{backgroundImage: `url('./wedding.webp')`}}>
         <div className="w-3/4 mx-auto m-16 flex flex-col gap-4 items-center z-40 relative before:content-[''] before:absolute before:w-full before:h-full before:bg-black/50 before:py-6 before:rounded-xl p-2">
           <h2 className='headings text-center text-2xl lg:text-5xl text-white px-1 md:px-4 b py-4 z-50'>WEDDINGS</h2>
