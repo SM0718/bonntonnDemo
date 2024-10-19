@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react'
-import HeadLabel from '../components/HeadLabel'
+import React, { useState } from 'react'
 import Button from '../components/Button'
 import { boxes } from '../utils/boxes' 
 import Contact from '../components/Contact'
@@ -11,17 +10,10 @@ function Home() {
 
   const [show, setShow] = useState(false); // Controls popup visibility
   const [choice, setChoice] = useState(null); // Tracks which popup to show
-  const [isApple, setIsApple] = useState(false)
 
   function isAppleDevice() {
-    if(/iPhone|iPad/.test(navigator.userAgent)) {
-      setIsApple(true)
-    }
+    return /iPhone|iPad/.test(navigator.userAgent)
   }
-
-  isAppleDevice(() => {
-    isWindowsDevice()
-  }, [])
 
   // Handle popup display based on button clicked
   const handlePopup = (e) => {
@@ -47,7 +39,7 @@ function Home() {
               </div>
           </div>
 
-          <div className={`w-full h-screen bg-cover bg-top bg-no-repeat p-8 md:hidden flex justify-start items-end relative ${isApple? "" : "bg-fixed"}`}
+          <div className={`w-full h-screen bg-cover bg-top bg-no-repeat p-8 md:hidden flex justify-start items-end relative ${isAppleDevice()? "" : "bg-fixed"}`}
             style={{backgroundImage: `url('./mobileBanner.webp')`}}>
             <div className="w-3/4 mx-auto m-16 flex flex-col gap-4 items-center relative before:content-[''] before:absolute before:w-full before:h-full before:bg-black/50 before:py-6 before:rounded-xl before:z-30 p-2">
                 <h2 className='headings text-center text-2xl lg:text-5xl font-medium text-white px-1 md:px-4 b z-40 py-4'><TypeAnimations /></h2>
