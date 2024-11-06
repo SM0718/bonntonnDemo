@@ -24,6 +24,10 @@ function Home() {
   const handlePopupClose = () => {
     setShow(false); // Close the popup
   };
+
+  const openPDF = (link) => {
+    window.open(link, '_blank');
+  };
   
   
   return (
@@ -46,25 +50,6 @@ function Home() {
                 <p className='hidden text-center md:flex text-base md:text-xl text-white px-4 b z-40'>
                 Luxury gift boxes that are thoughtfully curated to celebrate moments, create memories, and deepen connections.</p>
                 <p className='md:hidden flex text-white text-center text-base px-1 b z-40'>Luxury gift boxes that are thoughtfully curated to celebrate moments, create memories, and deepen connections.</p>
-              </div>
-          </div>
-
-          <div className={`w-full h-screen bg-cover bg-center bg-no-repeat flex justify-start items-end relative ${isAppleDevice()? "bg-scroll" : "bg-fixed"}`} style={{backgroundImage: `url('./diwali.webp')`}}>
-            <div className="w-3/4 mx-auto m-16 flex flex-col gap-4 items-center z-40 relative before:content-[''] before:absolute before:w-full before:h-full before:bg-black/50 before:py-6 before:rounded-xl p-2">
-                <h2 className='headings text-center text-2xl lg:text-5xl font-medium text-white px-1 md:px-4 b z-50 py-4'>DIWALI EDIT</h2>
-                <p className='hidden text-center md:flex text-base md:text-xl z-50 text-white px-4 b'>
-            Exquisite Diwali gift boxes, curated to celebrate success, foster connections, and leave a lasting impression on your corporate partners.</p>
-            <p className='md:hidden flex text-white text-center text-base px-1 b z-50'>Exquisite Diwali gift boxes to celebrate success and impress corporate partners.</p>
-            <div className='flex flex-col justify-center items-center md:flex-row gap-4 my-4 z-50'>
-            <NavLink to={'https://publuu.com/flip-book/688669/1537579'}>
-               <Button className={'bg-white hover:bg-black transition duration-500 w-[200px] cursor-pointer text-black hover:text-white font-semibold mx-1 md:mx-4 px-6 py-4 rounded-xl text-base b'}>Diwali Pre-Sets</Button>
-            </NavLink>
-
-            <NavLink to={'https://publuu.com/flip-book/688669/1532121'}>
-               <Button className={'bg-white hover:bg-black transition duration-500 w-[200px] cursor-pointer text-black hover:text-white font-semibold mx-1 md:mx-4 px-6 py-4 rounded-xl text-base b'}>Corporate Gifting</Button>
-            </NavLink>
-
-            </div>
               </div>
           </div>
 
@@ -92,25 +77,6 @@ function Home() {
           </div>
 
 
-          {/* <div className='w-full h-screen bg-cover bg-top bg-no-repeat flex justify-start items-end relative bg-fixed
-        ' style={{backgroundImage: `url('./diwaliActual.webp')`}}>
-            <div className="w-3/4 mx-auto m-16 flex flex-col gap-4 items-center z-40 relative before:content-[''] before:absolute before:w-full before:h-full before:bg-black/50 before:py-6 before:rounded-xl p-2">
-            <h2 className='headings text-center text-2xl lg:text-5xl text-white px-1 md:px-4 b py-4 z-50'>BIRTH ANNOUNCEMENTS</h2>
-            <p className='hidden text-center md:flex text-sm md:text-xl text-white px-4 b z-50'>
-            Elegant birth announcements, exquisitely designed to celebrate new beginnings, share your joy, and create cherished memories with family and friends.</p>
-            <p className='md:hidden flex text-white text-center text-base px-1 b z-50'>Elegant birth announcements are designed to celebrate new beginnings and share your joy with loved ones.</p>
-            <div className='my-4 z-50'>
-               <Button onClick={() => handlePopup(0)} className={'bg-white hover:bg-black transition duration-500 cursor-pointer text-black hover:text-white font-semibold mx-1 md:mx-4 px-6 py-4 rounded-xl text-lg b'}>View Catalogue</Button>
-            </div>
-            </div>
-
-            <div className='fixed w-[700px] h-[500px] z-50'>
-                  {
-                    (choice === 0) && <img className='w-full h-full' src='./birthPopup.webp'/>
-                  }
-            </div>
-          </div> */}
-
     <div className={`w-full h-screen bg-cover bg-center bg-no-repeat flex justify-start items-end relative ${isAppleDevice()? "bg-scroll" : "bg-fixed"}`}
         style={{backgroundImage: `url('./diwaliActual.webp')`}}>
         <div className="w-3/4 mx-auto m-16 flex flex-col gap-4 items-center z-40 relative before:content-[''] before:absolute before:w-full before:h-full before:bg-black/50 before:py-6 before:rounded-xl p-2">
@@ -129,25 +95,6 @@ function Home() {
         </div>
       </div>
 
-          {/* <div className='w-full h-screen bg-cover bg-no-repeat flex justify-start items-end relative bg-fixed
-        ' style={{backgroundImage: `url('./wedding.webp')`}}>
-            <div className="w-3/4 mx-auto m-16 flex flex-col gap-4 items-center z-40 relative before:content-[''] before:absolute before:w-full before:h-full before:bg-black/50 before:py-6 before:rounded-xl p-2">
-            <h2 className='headings text-center text-2xl lg:text-5xl text-white px-1 md:px-4 b py-4 z-50'>WEDDINGS</h2>
-            <p className='hidden text-center md:flex text-sm md:text-xl text-white px-4 b z-50'>
-            Opulent wedding announcements, elegantly crafted to showcase your love and leave an unforgettable impression on your guests.</p>
-            <p className='md:hidden flex text-white text-center text-base px-1 b z-50'>Opulent wedding announcements, crafted to showcase your love and leave an unforgettable impression.</p>
-            <div className='my-4 z-50'>
-               <Button onClick={() => handlePopup(1)} className={'bg-white hover:bg-black transition duration-500 cursor-pointer text-black hover:text-white font-semibold mx-1 md:mx-4 px-6 py-4 rounded-xl text-lg b'}>View Catalogue</Button>
-            </div>
-            </div>
-
-            <div className='fixed w-[700px] h-[500px] z-50'>
-                  {
-                    (choice === 0) && <img className='w-full h-full' src='./weddingPopup.webp'/>
-                  }
-            </div>
-          </div> */}
-
 <div className={`w-full h-screen bg-cover bg-center bg-no-repeat flex justify-start items-end relative ${isAppleDevice()? "bg-scroll" : "bg-fixed"}`}
         style={{backgroundImage: `url('./wedding.webp')`}}>
         <div className="w-3/4 mx-auto m-16 flex flex-col gap-4 items-center z-40 relative before:content-[''] before:absolute before:w-full before:h-full before:bg-black/50 before:py-6 before:rounded-xl p-2">
@@ -165,6 +112,25 @@ function Home() {
           </div>
         </div>
       </div>
+
+      <div className={`w-full h-screen bg-cover bg-center bg-no-repeat flex justify-start items-end relative ${isAppleDevice()? "bg-scroll" : "bg-fixed"}`} style={{backgroundImage: `url('./diwali.webp')`}}>
+            <div className="w-3/4 mx-auto m-16 flex flex-col gap-4 items-center z-40 relative before:content-[''] before:absolute before:w-full before:h-full before:bg-black/50 before:py-6 before:rounded-xl p-2">
+                <h2 className='headings text-center text-2xl lg:text-5xl font-medium text-white px-1 md:px-4 b z-50 py-4'>DIWALI EDIT</h2>
+                <p className='hidden text-center md:flex text-base md:text-xl z-50 text-white px-4 b'>
+            Exquisite Diwali gift boxes, curated to celebrate success, foster connections, and leave a lasting impression on your corporate partners.</p>
+            <p className='md:hidden flex text-white text-center text-base px-1 b z-50'>Exquisite Diwali gift boxes to celebrate success and impress corporate partners.</p>
+            <div className='flex flex-col justify-center items-center md:flex-row gap-4 my-4 z-50'>
+            
+               <Button onClick={() => openPDF('./Bespoke Diwali Bonntonn - 2024.pdf')} className={'bg-white hover:bg-black transition duration-500 w-[200px] cursor-pointer text-black hover:text-white font-semibold mx-1 md:mx-4 px-6 py-4 rounded-xl text-base b'}>Diwali Pre-Sets</Button>
+           
+
+            <NavLink to={'https://publuu.com/flip-book/688669/1532121'}>
+               <Button className={'bg-white hover:bg-black transition duration-500 w-[200px] cursor-pointer text-black hover:text-white font-semibold mx-1 md:mx-4 px-6 py-4 rounded-xl text-base b'}>Corporate Gifting</Button>
+            </NavLink>
+
+            </div>
+              </div>
+          </div>
 
       {show && (
         <div className='fixed inset-0 bg-black/50 z-50 flex justify-center items-center px-2'>
