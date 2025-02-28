@@ -1,6 +1,5 @@
 import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { NavLink } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import { boxes } from '../utils/boxes';
 
 // Lazy load components for better initial loading
@@ -67,11 +66,6 @@ function Home() {
 
   if (isLoading) return <LoadingSpinner />;
 
-  const fadeInVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 }
-  };
-
   const sectionClass = `w-full h-screen bg-cover bg-center bg-no-repeat flex justify-start items-end relative ${
     isAppleDevice() ? "bg-scroll" : "bg-fixed"
   }`;
@@ -79,15 +73,9 @@ function Home() {
   const overlayClass = "w-3/4 mx-auto m-16 flex flex-col gap-4 items-center z-40 relative before:content-[''] before:absolute before:w-full before:h-full before:bg-black/50 before:py-6 before:rounded-xl p-2";
 
   return (
-    <motion.div 
-      initial="hidden"
-      animate="visible"
-      className='flex flex-col items-center justify-center relative'
-    >
+    <div className='flex flex-col items-center justify-center relative'>
       {/* Main Banner Section */}
-      <motion.div
-        variants={fadeInVariants}
-        transition={{ duration: 0.6 }}
+      <div
         className={sectionClass}
         style={{backgroundImage: `url('./mainBanner.webp')`}}
       >
@@ -104,12 +92,10 @@ function Home() {
             Luxury gift boxes that are thoughtfully curated to celebrate moments, create memories, and deepen connections.
           </p>
         </div>
-      </motion.div>
+      </div>
 
       {/* Mobile Banner Section */}
-      <motion.div
-        variants={fadeInVariants}
-        transition={{ duration: 0.6 }}
+      <div
         className={`${sectionClass} md:hidden`}
         style={{backgroundImage: `url('./mobileBanner.webp')`}}
       >
@@ -123,12 +109,10 @@ function Home() {
             Luxury gift boxes that are thoughtfully curated to celebrate moments, create memories, and deepen connections.
           </p>
         </div>
-      </motion.div>
+      </div>
 
       {/* Gifting Pre-Sets Section */}
-      <motion.div
-        variants={fadeInVariants}
-        transition={{ duration: 0.6 }}
+      <div
         className={sectionClass}
         style={{backgroundImage: `url('./giftingPreSets.webp')`}}
       >
@@ -156,12 +140,10 @@ function Home() {
             </Suspense>
           </div>
         </div>
-      </motion.div>
+      </div>
 
       {/* Birth Announcements Section */}
-      <motion.div
-        variants={fadeInVariants}
-        transition={{ duration: 0.6 }}
+      <div
         className={sectionClass}
         style={{backgroundImage: `url('./diwaliActual.webp')`}}
       >
@@ -186,12 +168,10 @@ function Home() {
             </Suspense>
           </div>
         </div>
-      </motion.div>
+      </div>
 
       {/* Weddings Section */}
-      <motion.div
-        variants={fadeInVariants}
-        transition={{ duration: 0.6 }}
+      <div
         className={sectionClass}
         style={{backgroundImage: `url('./wedding.webp')`}}
       >
@@ -216,12 +196,10 @@ function Home() {
             </Suspense>
           </div>
         </div>
-      </motion.div>
+      </div>
 
       {/* Diwali Edit Section */}
-      <motion.div
-        variants={fadeInVariants}
-        transition={{ duration: 0.6 }}
+      <div
         className={sectionClass}
         style={{backgroundImage: `url('./diwali.webp')`}}
       >
@@ -252,21 +230,12 @@ function Home() {
             </Suspense>
           </div>
         </div>
-      </motion.div>
+      </div>
 
       {/* Popup Modal */}
       {show && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          className='fixed inset-0 bg-black/50 z-50 flex justify-center items-center px-2'
-        >
-          <motion.div
-            initial={{ scale: 0.5 }}
-            animate={{ scale: 1 }}
-            className='relative md:w-[700px] h-[300px] md:h-[500px]'
-          >
+        <div className='fixed inset-0 bg-black/50 z-50 flex justify-center items-center px-2'>
+          <div className='relative md:w-[700px] h-[300px] md:h-[500px]'>
             <img
               className='w-full h-full object-cover rounded-lg'
               src={choice === 0 ? './birthPopup.webp' : './weddingPopup.webp'}
@@ -278,24 +247,19 @@ function Home() {
             >
               ✕
             </button>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
       )}
 
       {/* Make It Your Own Section */}
-      <motion.div
-        variants={fadeInVariants}
-        transition={{ duration: 0.6 }}
-        className='w-full flex flex-col gap-4 b my-20 px-2'
-      >
+      <div className='w-full flex flex-col gap-4 b my-20 px-2'>
         <h1 className='text-2xl md:text-[40px] text-center font-semibold b'>
           Make It Your Own
         </h1>
         <div className='flex justify-evenly gap-8 flex-wrap my-8'>
           {boxes.map(item => (
-            <motion.div
+            <div
               key={item.desc}
-              whileHover={{ scale: 1.05 }}
               className='flex flex-col items-center gap-4 b'
             >
               <img
@@ -308,30 +272,26 @@ function Home() {
                 <p className='text-lg md:text-xl headings font-semibold b'>{item.desc}</p>
                 <p className='text-sm md:text-lg para text-slate-500 times'>{item.moq}</p>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
-      </motion.div>
+      </div>
 
       {/* Connect With Us Section */}
-      <motion.div
-        variants={fadeInVariants}
-        transition={{ duration: 0.6 }}
-        className='w-full flex flex-col items-center gap-10 md:my-20 mx-auto'
-      >
+      <div className='w-full flex flex-col items-center gap-10 md:my-20 mx-auto'>
         <h1 className='text-2xl md:text-[40px] text-center font-semibold b'>
           Connect With Us
         </h1>
         <Suspense fallback={<LoadingSpinner />}>
           <Contact />
         </Suspense>
-      </motion.div>
+      </div>
 
       {/* WhatsApp Component */}
       <Suspense fallback={null}>
         <Whatsapp occasion={'Bulk Ordering'} />
       </Suspense>
-    </motion.div>
+    </div>
   );
 }
 
