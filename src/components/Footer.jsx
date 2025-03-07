@@ -56,10 +56,10 @@ function Footer() {
             <h1 className='text-xl font-bold b text-center'>THE BRAND</h1>
 
             <div className='flex flex-col gap-2'>
-              <p className='b text-base text-center md:text-start'>About Us</p>
-              <p className='b text-base text-center md:text-start'>Return Policy</p>
-              <p className='b text-base text-center md:text-start'>Shipping Info</p>
-              <p className='b text-base text-center md:text-start'>Privacy Policy</p>
+              <p className='b text-base text-center md:text-start cursor-pointer'>About Us</p>
+              <p className='b text-base text-center md:text-start cursor-pointer'>Return Policy</p>
+              <p className='b text-base text-center md:text-start cursor-pointer'>Shipping Info</p>
+              <p className='b text-base text-center md:text-start cursor-pointer'>Privacy Policy</p>
             </div>
           </div>
 
@@ -67,10 +67,14 @@ function Footer() {
           {/* Div for the last div */}
           <div className='flex flex-col gap-4 text-center text-white'>
                       <h1 className='font-bold text-center md:text-start text-xl headings b'>Contact Us</h1>
-
                       <div className='flex flex-col gap-2'>
                         <p className='times text-sm text-center md:text-start '>9874451300</p>
                         <p className='b text-base'>bonntonn.kolkata@gmail.com</p>
+                      </div>
+
+                      <div className='flex flex-col gap-2'>
+                        <p className='times text-sm text-center md:text-start '>Address - Flat 2b, 3 Burdwan,</p>
+                        <p className='b text-base'>Road Alipore Kolkata West Bengal -700027</p>
                       </div>
 
                       <div className='w-full flex justify-center gap-[40px]'>
