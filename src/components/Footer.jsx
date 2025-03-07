@@ -65,7 +65,7 @@ function Footer() {
 
 
           {/* Div for the last div */}
-          <div className='flex flex-col gap-4 text-center text-white'>
+          <div className='flex flex-col gap-4 text-start text-white'>
                       <h1 className='font-bold text-center md:text-start text-xl headings b'>Contact Us</h1>
                       <div className='flex flex-col gap-2'>
                         <p className='times text-sm text-center md:text-start '>9874451300</p>
